@@ -1,4 +1,5 @@
 import * as style from './FirmFacts.module.scss';
+import { FirmCard } from '../firm-card/FirmCard.tsx';
 
 export const FirmFacts = ({variant}: { variant: 'default' }) => {
     return (
@@ -10,21 +11,21 @@ export const FirmFacts = ({variant}: { variant: 'default' }) => {
                 </h3>
                 <div className={style.divider} />
                 <div className={style.cards}>
-                    <div>
-                        Any
-                    </div>
-                    <div>
-                        Any1
-                    </div>
-                    <div>
-                        Any2
-                    </div>
-                    <div>
-                        Any3
-                    </div>
-                    <div>
-                        Any4
-                    </div>
+                    <FirmCard variant='default'>
+                        <div>Any</div>
+                    </FirmCard>
+                    <FirmCard variant='default'>
+                        <div>Any1</div>
+                    </FirmCard>
+                    <FirmCard variant='default'>
+                        <div>Any2</div>
+                    </FirmCard>
+                    <FirmCard variant='border'>
+                        <div>Any3</div>
+                    </FirmCard>
+                    <FirmCard variant='border'>
+                        <div>Any4</div>
+                    </FirmCard>
                 </div>
             </div>
         </div>

@@ -1,0 +1,127 @@
+.firmCard {
+  position: relative;
+  background: #ffffff;
+  cursor: pointer;
+
+  @media (min-width: 768px) {
+    padding: 0 8px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 0 20px;
+  }
+
+  @media (min-width: 1400px) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: 1680px) {
+    padding: 0 40px;
+  }
+
+  &:hover {
+    background: #07C06A;
+  }
+}
+
+.firmCardBorder {
+  border: 15px solid #ffffff;
+
+  &:hover {
+    background: #ffffff;
+    border-color: #07C06A;
+  }
+}
+
+.content {
+  display: grid;
+  padding-top: 100px;
+  margin: 0 auto;
+  position: relative;
+
+  @media (min-width: 768px) {
+    padding: 100px 10px 0;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 100px 20px 0;
+  }
+
+  @media (min-width: 1400px) {
+    padding: 100px 30px 0;
+  }
+
+  @media (min-width: 1680px) {
+    padding: 100px 45px 0;
+  }
+}
+
+.title {
+
+}
+
+.cards {
+  display: grid;
+  grid-auto-rows: 322px;
+  grid-template-columns: auto;
+  gap: 18px;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 267px;
+  }
+
+  @media (min-width: 1400px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 270px;
+  }
+
+  @media (min-width: 1680px) {
+    grid-auto-rows: 322px;
+  }
+}
+
+.card {
+
+}
+
+.cards > *:first-child {
+  grid-row: span 2;
+}
+
+.divider {
+  width: 100%;
+  background: #ffffff;
+  opacity: 0.2;
+  height: 1px;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 32px;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+
+  &:before, &:after {
+    position: absolute;
+    left: 50%;
+    content: '';
+    height: 100%;
+    width: 1px;
+    background-color: #ffffff;
+  }
+
+  &:hover::before, &:hover::after, {
+    background-color: #000000;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
+}
