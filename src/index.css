@@ -2,7 +2,6 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #2D3E4E;
@@ -14,6 +13,23 @@
 }
 
 #root {
+  @media (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 1024px;
+  }
+
+  @media (min-width: 1400px) {
+    max-width: 1400px;
+  }
+
+  @media (min-width: 1680px) {
+    max-width: 1680px;
+  }
+
+  margin: 0 auto;
   height: 100%;
   width: 100%;
 }
@@ -32,6 +48,8 @@ body {
   display: flex;
   height: 100vh;
   place-items: center;
+  justify-content: center;
+  align-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
