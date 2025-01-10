@@ -1,0 +1,47 @@
+.customButton {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 70px;
+  transition: all 0.3s ease;
+  width: 100%;
+  height: 70px;
+  background: #2D3E4E;
+  font-size: 19px;
+
+  overflow: hidden;
+}
+
+.customButton.buttonDisabled:disabled, .customButton.buttonDisabled[disabled] {
+  background: #aaaaaa;
+  color: #fff;
+  border-color: #aaaaaa;
+  cursor: not-allowed;
+}
+
+.hide {
+  display: none;
+}
+
+.icon {
+  fill: #ffffff;
+  height: auto;
+  width: 25px;
+  margin-right: 12px;
+}
+
+.text {
+  text-align: center;
+  overflow: hidden;
+  text-wrap: nowrap;
+  width: 100%;
+}
+
+.textIcon {
+  text-align: left;
+  text-wrap: auto;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}

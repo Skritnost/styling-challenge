@@ -1,5 +1,6 @@
 import * as style from './FirmFacts.module.scss';
 import { FirmCard } from '../firm-card/FirmCard.tsx';
+import { CustomButton } from '../custom-button/CustomButton.tsx';
 
 export const FirmFacts = ({variant}: { variant: 'default' }) => {
     return (
@@ -12,19 +13,45 @@ export const FirmFacts = ({variant}: { variant: 'default' }) => {
                 <div className={style.divider} />
                 <div className={style.cards}>
                     <FirmCard variant='default'>
-                        <div>Any</div>
+                        <CustomButton variant='icon'>
+                            This is a two line button
+                            that terminates with something
+                        </CustomButton>
                     </FirmCard>
                     <FirmCard variant='default'>
-                        <div>Any1</div>
+                        <CustomButton variant='icon'>
+                            This is a two line button
+                            that terminates with something
+                        </CustomButton>
                     </FirmCard>
                     <FirmCard variant='default'>
-                        <div>Any2</div>
+                        <CustomButton variant='default'>
+                            This is a one line button
+                        </CustomButton>
                     </FirmCard>
                     <FirmCard variant='border'>
-                        <div>Any3</div>
+                        <CustomButton variant='icon'>
+                            This is a two line button
+                            that terminates with something
+                        </CustomButton>
                     </FirmCard>
                     <FirmCard variant='border'>
-                        <div>Any4</div>
+                        <CustomButton variant='icon'>
+                            This is a two line button
+                            that terminates with something
+                        </CustomButton>
+                    </FirmCard>
+                    <FirmCard variant='border'>
+                        <CustomButton variant='icon' isDisabled={true}>
+                            This is a two line button
+                            that terminates with something
+                        </CustomButton>
+                    </FirmCard>
+                    <FirmCard variant='border'>
+                        <CustomButton variant='icon'>
+                            This is a two line button
+                            that terminates with something
+                        </CustomButton>
                     </FirmCard>
                 </div>
             </div>
