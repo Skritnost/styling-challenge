@@ -3,9 +3,9 @@ import { ReactElement } from 'react';
 
 type CardVariant = 'default' | 'border';
 
-export const FirmCard = ({variant, children}: { variant: CardVariant, children: ReactElement; }) => {
+export const FirmCard = ({variant, children, className}: { variant: CardVariant, children: ReactElement; className?: string }) => {
     return (
-        <div className={`${style.firmCard} ${variant === 'border' ? style.firmCardBorder : null}`}>
+        <div className={`${style.firmCard} ${variant === 'border' ? style.firmCardBorder : null} ${className}`}>
             {children}
         </div>
     );

@@ -44,8 +44,17 @@
   }
 }
 
-.title {
+.cardContentCentered {
+  align-items: center;
+}
 
+.title {
+  color: #ffffff;
+  font-size: 30px;
+
+  @media (min-width: 1024px) {
+    font-size: 60px;
+  }
 }
 
 .cards {
@@ -69,10 +78,6 @@
   }
 }
 
-.card {
-
-}
-
 .cards > *:first-child {
   grid-row: span 2;
 }
@@ -82,17 +87,24 @@
   background: #ffffff;
   opacity: 0.2;
   height: 1px;
+  margin: 10px 0 50px;
 }
 
 .close {
   position: absolute;
   right: 0;
   top: 32px;
-  width: 44px;
-  height: 44px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
 
+  @media (min-width: 1024px) {
+    width: 44px;
+    height: 44px;
+  }
+
   &:before, &:after {
+    transition: all 0.3s ease;
     position: absolute;
     left: 50%;
     content: '';

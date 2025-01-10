@@ -1,18 +1,12 @@
 .firmCard {
+  display: flex;
   position: relative;
   background: #ffffff;
   transition: all 0.3s ease;
-
-  @media (min-width: 768px) {
-    padding: 10px 10px;
-  }
-
-  @media (min-width: 1024px) {
-    padding: 20px 20px;
-  }
+  padding: 40px 20px;
 
   @media (min-width: 1680px) {
-    padding: 30px 30px;
+    padding: 50px 30px;
   }
 
   &:hover {
@@ -27,11 +21,11 @@
 
 .firmCardBorder {
   border: 10px solid #ffffff;
-  padding: 10px 10px;
+  padding: 30px 10px;
 
   @media (min-width: 1400px) {
     border: 15px solid #ffffff;
-    padding: 15px 15px;
+    padding: 35px 15px;
   }
 
   &:hover {

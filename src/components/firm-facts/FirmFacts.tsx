@@ -7,29 +7,29 @@ export const FirmFacts = ({variant}: { variant: 'default' }) => {
         <div className={variant === 'default' ? style.firmFacts : null}>
             <div className={style.content}>
                 <div className={style.close}/>
-                <h3 className={style.title}>
+                <span className={style.title}>
                     Firm Facts
-                </h3>
+                </span>
                 <div className={style.divider} />
                 <div className={style.cards}>
-                    <FirmCard variant='default'>
+                    <FirmCard className={style.cardContentCentered} variant='default'>
                         <CustomButton variant='icon'>
                             This is a two line button
                             that terminates with something
                         </CustomButton>
                     </FirmCard>
-                    <FirmCard variant='default'>
+                    <FirmCard className={style.cardContentCentered} variant='default'>
                         <CustomButton variant='icon'>
                             This is a two line button
                             that terminates with something
                         </CustomButton>
                     </FirmCard>
-                    <FirmCard variant='default'>
+                    <FirmCard className={style.cardContentCentered} variant='default'>
                         <CustomButton variant='default'>
                             This is a one line button
                         </CustomButton>
                     </FirmCard>
-                    <FirmCard variant='border'>
+                    <FirmCard className={style.cardContentCentered} variant='border'>
                         <CustomButton variant='icon'>
                             This is a two line button
                             that terminates with something
